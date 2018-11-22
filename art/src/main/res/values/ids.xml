@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--2018-8-20 适配 ResueViewPagerAdapter-->
+    <item name="holder_id" type="id" />
+
+</resources>

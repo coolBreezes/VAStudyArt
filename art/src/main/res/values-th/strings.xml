@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--权限申请相关 BEGIN-->
+    <string name="permission_cancel">Cancel</string>
+    <string name="permission_setting">ตั้งค่า</string>
+    <string name="permission_title_permission_failed">ไม่พบข้อมูล</string>
+    <string name="permission_message_permission_failed">ไม่พบสิทธิ์การใช้งาน กรุณาตั้งค่าใหม่ \n\n%1$s</string>
+
+    <string name="permission_resume">ข้อมูล</string>
+    <string name="permission_title_permission_rationale">ไม่พบสิทธิ์</string>
+    <string name="permission_message_permission_rationale">คุณได้ยกเลิกสิทธิ์การใช้งานนี้แล้ว :\n\n%1$s</string>
+
+    <string name="permission_request_failure">Request permissions failure</string>
+    <string name="permission_intent_setting">กรุณาตั้งค่า</string>
+
+    <!--权限申请相关 END-->
+
+</resources>

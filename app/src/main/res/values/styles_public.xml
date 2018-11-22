@@ -1,0 +1,106 @@
+<resources>
+
+    <!--全局相关 BEGIN-->
+
+    <!---->
+
+    <!--&lt;!&ndash; 全局内分割线距两边16dp &ndash;&gt;-->
+    <!--<style name="public_divide_line_inside" parent="@android:style/Widget.TextView">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">@dimen/public_divide_line_height</item>-->
+        <!--<item name="android:background">@color/public_divide_line_color</item>-->
+        <!--<item name="android:layout_marginLeft">@dimen/public_page_space</item>-->
+        <!--<item name="android:layout_marginRight">@dimen/public_page_space</item>-->
+    <!--</style>-->
+
+
+    <!--&lt;!&ndash; 全局外分割线 &ndash;&gt;-->
+    <!--<style name="public_divide_line_outside" parent="@android:style/Widget.TextView">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">@dimen/public_divide_line_height</item>-->
+        <!--<item name="android:background">@color/public_divide_line_color</item>-->
+    <!--</style>-->
+
+
+    <!--&lt;!&ndash; 全局间隔块 &ndash;&gt;-->
+    <!--<style name="public_interval_block" parent="@android:style/Widget.TextView">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">@dimen/public_interval_block_height</item>-->
+        <!--<item name="android:background">@color/public_interval_block_color</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash;全局相关 END&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;控件 BEGIN&ndash;&gt;-->
+
+    <!--&lt;!&ndash; editText的默认样式 登录注册 vertical状态下&ndash;&gt;-->
+    <!--<style name="public_editText_normal">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">@dimen/public_item_height</item>-->
+        <!--<item name="android:gravity">center_vertical</item>-->
+        <!--<item name="android:textColor">@color/public_text</item>-->
+        <!--<item name="android:textColorHint">@color/public_text_hint</item>-->
+        <!--<item name="android:textSize">@dimen/public_font_size_normal</item>-->
+        <!--<item name="android:maxLines">1</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; textView的默认样式 vertical状态下&ndash;&gt;-->
+    <!--<style name="public_textView_normal">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">@dimen/public_item_height</item>-->
+        <!--<item name="android:gravity">center_vertical</item>-->
+        <!--<item name="android:textColor">@color/public_text</item>-->
+        <!--<item name="android:textSize">@dimen/public_font_size_normal</item>-->
+        <!--<item name="android:paddingLeft">@dimen/public_space_normal</item>-->
+        <!--<item name="android:paddingRight">@dimen/public_space_normal</item>-->
+        <!--<item name="android:background">@drawable/publico_selector_item_press_bg</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; textView样式 horizontal状态下&ndash;&gt;-->
+    <!--<style name="public_textView_normal_h">-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">@dimen/public_item_height</item>-->
+        <!--<item name="android:gravity">center_vertical</item>-->
+        <!--<item name="android:textColor">@color/public_text</item>-->
+        <!--<item name="android:textSize">@dimen/public_font_size_normal</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; Button的默认样式 &ndash;&gt;-->
+    <!--<style name="public_button_normal">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">@dimen/public_btn_height</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:textColor">@color/white</item>-->
+        <!--<item name="android:textSize">@dimen/public_font_size_normal</item>-->
+        <!--<item name="android:background">@drawable/publico_selector_round_rect</item>-->
+        <!--<item name="android:layout_marginLeft">@dimen/public_space_small</item>-->
+        <!--<item name="android:layout_marginRight">@dimen/public_space_small</item>-->
+    <!--</style>-->
+
+
+    <!--&lt;!&ndash; CheckBox的默认样式 &ndash;&gt;-->
+    <!--<style name="public_checkBox_normal">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">@dimen/public_item_height</item>-->
+        <!--<item name="android:layout_gravity">center_vertical</item>-->
+        <!--<item name="android:gravity">center_vertical</item>-->
+        <!--<item name="android:textColor">@color/public_text</item>-->
+        <!--<item name="android:textSize">@dimen/public_font_size_normal</item>-->
+        <!--<item name="android:background">@drawable/publico_selector_item_press_bg</item>-->
+        <!--<item name="android:paddingLeft">@dimen/public_space_normal</item>-->
+        <!--<item name="android:paddingRight">@dimen/public_space_normal</item>-->
+        <!--<item name="android:button">@null</item>-->
+    <!--</style>-->
+
+    <!-- Dialog载入框样式：修复背景显示白色长条-->
+    <style name="public_dialog_load" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorAccent">@color/public_load_progress_bar_tint</item>
+    </style>
+
+    <!--控件 END-->
+
+
+</resources>

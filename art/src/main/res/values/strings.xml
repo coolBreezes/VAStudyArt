@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--权限申请相关 BEGIN-->
+    <string name="permission_cancel">Cancel</string>
+    <string name="permission_setting">Setting</string>
+    <string name="permission_title_permission_failed">Permission apply failure</string>
+    <string name="permission_message_permission_failed">We need some permissions are you refuse or system error, would you please go to Settings page manual grant the following permissions to continue the program:\n\n%1$s</string>
+
+    <string name="permission_resume">Resume</string>
+    <string name="permission_title_permission_rationale">Permission denied</string>
+    <string name="permission_message_permission_rationale">You have rejected us for authorization,please grant the following permissions to continue the program:\n\n%1$s</string>
+
+    <string name="permission_request_failure">Request permissions failure</string>
+    <string name="permission_intent_setting">Need to go to the settings</string>
+
+    <!--权限申请相关 END-->
+
+</resources>

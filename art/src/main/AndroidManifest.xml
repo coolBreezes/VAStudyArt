@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qing.mvpart">
+
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--网络连接-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取wifi连接状态变化-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--获取手机状态参数，并作为生成个推唯一标识的必要参数-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--震动权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+
+    </application>
+
+</manifest>

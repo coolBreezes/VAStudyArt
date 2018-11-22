@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--索引-->
+    <!--全局-->
+    <!--字体-->
+
+    <!-- 全局的背景色 -->
+    <color name="public_bg_color">#ffffff</color>
+
+    <!-- 字体色 -->
+    <color name="public_text_dark">#262626</color>      <!-- todo 待修改 -->
+    <color name="public_text">#333333</color>
+    <color name="public_text_light">#6e6e6e</color>
+    <color name="public_text_hint">#A2A3A3</color>
+
+
+    <!-- 全局分隔线的颜色-->
+    <color name="public_divide_line_color">#e5e5e5</color>
+
+    <!-- 全局间隔块的颜色-->
+    <color name="public_interval_block_color">#EAEEF1</color>
+
+    <!-- 全局列表项未点击的背景颜色-->
+    <color name="public_item_bg_normal">#ffffff</color>
+    <!-- 全局列表项点击后的背景颜色-->
+    <color name="public_item_bg_press">#EAEFF0</color>
+
+
+    <!--可定制 BEGIN-->
+
+    <color name="public_titlebar_bg">#ffffff</color>
+    <!--加载转圈框的颜色-->
+    <color name="public_load_progress_bar_tint">#3296fa</color>
+
+
+    <!--可定制 END-->
+
+</resources>
