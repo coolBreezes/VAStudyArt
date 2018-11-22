@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#ff019a64</color>
+    <color name="red">#ff0000</color>
+    <color name="golden">#bcad83</color>
+
+
+    <!--add-->
+    <color name="gray_deep">#cc6977d2</color>
+    <color name="gray_little">#999999</color>
+    <color name="gray_green">#d4d4d4</color>
+    <color name="hint">#B3B8E5</color>
+    <color name="white_little">#f4f4f4</color>
+    <color name="brown">#A67D3D</color>
+    <color name="black_input_bg">#4C4F53</color>
+    <color name="blue_little">#1dabf0</color>
+    <color name="blue_tony">#01a0f3</color>
+    <color name="red_text_state">#cd3013</color>
+    <color name="red_remind">#e90000</color>
+    <color name="green_little">#73D152</color>
+    <color name="dlg_lite_blue">#ff359ff2</color>
+
+
+
+
+
+
+</resources>
