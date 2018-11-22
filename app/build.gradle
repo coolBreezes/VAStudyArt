@@ -28,10 +28,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    externalNativeBuild {
-        cmake {
-            path "CMakeLists.txt"
-        }
+//    externalNativeBuild {
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
+//    }
+
+    sourceSets.main {
+        jni.srcDirs = []  // 不编译ndk,因为so已经编译好了
+        //res.srcDirs = ['src/main/res']
+        jniLibs.srcDirs = ['src/main/jniLibs']
     }
 
 
