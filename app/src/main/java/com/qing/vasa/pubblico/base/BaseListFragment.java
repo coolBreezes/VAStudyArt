@@ -13,7 +13,7 @@ import com.qing.vasa.R;
 
 public class BaseListFragment extends BaseFragment {
 
-    private RecyclerView rvList;
+    protected RecyclerView rvList;
 
     @Override
     public int getLayoutId() {

@@ -10,6 +10,7 @@ import com.qing.vasa.R;
 import com.qing.vasa.pubblico.base.BaseFragment;
 import com.qing.vasa.pubblico.base.BaseListFragment;
 import com.qing.vasa.pubblico.base.BaseViewPagerAdapter;
+import com.qing.vasa.va.junior.view.fragment.VAJuniorListFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,7 +57,7 @@ public class VideoAudioStudyFragment extends BaseFragment {
         mTagData.add("Intermediate");
         mTagData.add("Senior");
 
-        mFragmentList.add(new BaseListFragment());
+        mFragmentList.add(new VAJuniorListFragment());
         mFragmentList.add(new BaseListFragment());
         mFragmentList.add(new BaseListFragment());
 

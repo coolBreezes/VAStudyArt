@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/va_ll_card"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/public_item_height"
+    android:layout_marginLeft="@dimen/public_page_space"
+    android:layout_marginRight="@dimen/public_page_space"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/va_tv_title"
+        style="@style/public_textView_normal"
+        tools:text="1" />
+
+</LinearLayout>
