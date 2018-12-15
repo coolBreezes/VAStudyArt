@@ -372,4 +372,20 @@ public class NetworkUtils {
         }
         return null;
     }
+
+    //add 2018-12-10 09:47:19
+
+    /**
+     * 判断当前是否是移动网络
+     * <p>需添加权限 {@code <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>}</p>
+     *
+     * @param context 上下文
+     * @return {@code true}: 连接<br>{@code false}: 未连接
+     */
+    public static boolean isMobileConnected(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context
+                .getSystemService(Context.CONNECTIVITY_SERVICE);
+        return cm != null && cm.getActiveNetworkInfo() != null
+                && cm.getActiveNetworkInfo().getType() == ConnectivityManager.TYPE_MOBILE;
+    }
 }

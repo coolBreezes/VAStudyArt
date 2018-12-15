@@ -131,7 +131,7 @@ public abstract class BasePresenter<M extends IModel, V extends IView> implement
 
         @Override
         public void onError(Throwable e) {
-            Log.e("BasePresenter","e = " + e.getMessage());
+            Log.e("BasePresenter",TAG+" : e = " + e.getMessage());
             if (isViewAttached()) getV().hideLoading();
         }
 

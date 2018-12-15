@@ -26,6 +26,7 @@ public class VAStudyListAdapter extends BaseQuickAdapter<BaseCard, BaseViewHolde
     protected void convert(BaseViewHolder helper, BaseCard item) {
         ((TextView) helper.getView(R.id.va_tv_title))
                 .setText(item.getTitle());
+        helper.addOnClickListener(R.id.va_ll_card);
     }
 
 }

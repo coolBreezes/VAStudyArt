@@ -66,17 +66,17 @@
         <item name="android:textSize">@dimen/public_font_size_normal</item>
     </style>
 
-    <!--&lt;!&ndash; Button的默认样式 &ndash;&gt;-->
-    <!--<style name="public_button_normal">-->
-        <!--<item name="android:layout_width">match_parent</item>-->
-        <!--<item name="android:layout_height">@dimen/public_btn_height</item>-->
-        <!--<item name="android:gravity">center</item>-->
-        <!--<item name="android:textColor">@color/white</item>-->
-        <!--<item name="android:textSize">@dimen/public_font_size_normal</item>-->
+    <!-- Button的默认样式 -->
+    <style name="public_button_normal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/public_btn_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/public_font_size_normal</item>
         <!--<item name="android:background">@drawable/publico_selector_round_rect</item>-->
-        <!--<item name="android:layout_marginLeft">@dimen/public_space_small</item>-->
-        <!--<item name="android:layout_marginRight">@dimen/public_space_small</item>-->
-    <!--</style>-->
+        <item name="android:layout_marginLeft">@dimen/public_space_small</item>
+        <item name="android:layout_marginRight">@dimen/public_space_small</item>
+    </style>
 
 
     <!--&lt;!&ndash; CheckBox的默认样式 &ndash;&gt;-->
