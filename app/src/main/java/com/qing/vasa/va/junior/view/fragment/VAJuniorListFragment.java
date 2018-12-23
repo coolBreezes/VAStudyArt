@@ -1,17 +1,20 @@
 package com.qing.vasa.va.junior.view.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
+import android.util.Log;
 import android.view.View;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.qing.mvpart.util.ToastUtils;
+import com.chad.library.adapter.base.listener.OnItemChildClickListener;
 import com.qing.vasa.R;
 import com.qing.vasa.pubblico.base.BaseListFragment;
 import com.qing.vasa.pubblico.entity.BaseCard;
 import com.qing.vasa.va.junior.adapter.VAStudyListAdapter;
+import com.qing.vasa.va.junior.view.DrawPictureActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,15 +59,47 @@ public class VAJuniorListFragment extends BaseListFragment {
                 DividerItemDecoration.VERTICAL));
 
         mAdapter = new VAStudyListAdapter(cardData);
+
+
+        //这个方法被废弃了
+        /*
         mAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
+
+                Log.d("TAG41","onclick 触发了");
 
                 switch (view.getId()){
                     case R.id.va_ll_card:
                         ToastUtils.showS("click item");
                         break;
+                    case R.id.va_tv_title:
+                        ToastUtils.showS("click item tv");
+                        break;
                 }
+            }
+        });
+        */
+        rvList.addOnItemTouchListener(new OnItemChildClickListener() {
+            @Override
+            public void onSimpleItemChildClick(BaseQuickAdapter adapter, View view, int position) {
+                Log.d("TAG41","onclick 触发了");
+
+                switch (view.getId()){
+                    case R.id.va_ll_card:
+//                        ToastUtils.showS("click item");
+                        startActivity(new Intent(getActivity(),DrawPictureActivity.class));
+                        break;
+                    case R.id.va_tv_title:
+//                        ToastUtils.showS("click item tv");
+                        startActivity(new Intent(getActivity(),DrawPictureActivity.class));
+                        break;
+                }
+            }
+
+            @Override
+            public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
+                super.onItemChildClick(adapter, view, position);
             }
         });
 

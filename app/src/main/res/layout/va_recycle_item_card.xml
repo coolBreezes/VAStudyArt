@@ -6,6 +6,7 @@
     android:layout_height="@dimen/public_item_height"
     android:layout_marginLeft="@dimen/public_page_space"
     android:layout_marginRight="@dimen/public_page_space"
+    android:clickable="true"
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
