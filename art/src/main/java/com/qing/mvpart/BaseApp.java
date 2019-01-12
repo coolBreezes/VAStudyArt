@@ -22,6 +22,8 @@ import java.util.List;
  * -- MultiDexApplication
  * -- v1.2
  * -- 2018-7-8 使用ActivityLifecycleCallbacks统一管理Activity
+ *
+ * todo 这样定义instance有问题，待优化
  */
 public class BaseApp extends MultiDexApplication {
 

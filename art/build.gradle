@@ -87,9 +87,10 @@ dependencies {
      * view
      */
     //butterknife
-//    compile(rootProject.ext.dependencies["butterknife"]) {
-//        exclude module: 'support-annotations'
-//    }
+    compile(rootProject.ext.dependencies["butterknife"]) {
+        exclude module: 'support-annotations'
+        exclude module: 'support-compat'
+    }
 //    annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
 //        exclude module: 'support-annotations'
 //        exclude module: 'butterknife-annotations'

@@ -20,6 +20,9 @@ import com.qing.mvpart.util.ToastUtils;
 
 import org.greenrobot.eventbus.EventBus;
 
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
+
 /**
  * Fragment 基类
  * 封装业务无关的API
@@ -33,7 +36,7 @@ public abstract class QFragment<P extends IPresenter> extends Fragment implement
     protected Context mContext;
     protected LayoutInflater mInflater;
     private P mPresenter;
-//    private Unbinder mUnbinder;
+    private Unbinder mUnbinder;
 
     @Override
     public void onAttach(Context context) {
@@ -49,7 +52,7 @@ public abstract class QFragment<P extends IPresenter> extends Fragment implement
             //todo container
             rootView = inflater.inflate(getLayoutId(), null);
             //[update-test] todo butterknife 空指针
-//            mUnbinder = ButterKnife.bind(this, rootView);
+            mUnbinder = ButterKnife.bind(this, rootView);
 
         }
         //缓存的rootView需要判断是否已经被加过parent， 如果有parent需要从parent删除，要不然会发生这个rootView已经有parent的错误。
@@ -92,10 +95,10 @@ public abstract class QFragment<P extends IPresenter> extends Fragment implement
             //todo temp 不回收P层，回放逻辑未处理，临时处理
             //mPresenter = null;
         }
-//        if (mUnbinder != null && mUnbinder != Unbinder.EMPTY) {
-//            mUnbinder.unbind();
-//            mUnbinder = null;
-//        }
+        if (mUnbinder != null && mUnbinder != Unbinder.EMPTY) {
+            mUnbinder.unbind();
+            mUnbinder = null;
+        }
         mContext = null;
     }
 

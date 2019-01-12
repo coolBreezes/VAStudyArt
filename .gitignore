@@ -34,6 +34,9 @@ captures/
 
 # IntelliJ
 *.iml
+# 改为忽略整个idea文件夹
+.idea/
+
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/gradle.xml

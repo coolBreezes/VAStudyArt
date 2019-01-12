@@ -23,6 +23,9 @@ import com.qing.mvpart.util.ToastUtils;
 
 import org.greenrobot.eventbus.EventBus;
 
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
+
 /**
  * Activity 基类
  * 封装业务无关的API
@@ -38,7 +41,7 @@ public abstract class QActivity<P extends IPresenter> extends AppCompatActivity 
 
     protected Activity mContext;
     private P mPresenter;
-//    private Unbinder mUnbinder;
+    private Unbinder mUnbinder;
 
 
     @Override
@@ -50,7 +53,7 @@ public abstract class QActivity<P extends IPresenter> extends AppCompatActivity 
             setContentView(getLayoutId());
         }
         // TODO: 2018/4/9 可能会调用  setContentView(View view) 这个方法
-//        mUnbinder = ButterKnife.bind(this);
+        mUnbinder = ButterKnife.bind(this);
         initData(savedInstanceState);
     }
 
@@ -101,10 +104,10 @@ public abstract class QActivity<P extends IPresenter> extends AppCompatActivity 
             mPresenter.onDestroy();
             mPresenter = null;
         }
-//        if (mUnbinder != null && mUnbinder != Unbinder.EMPTY) {
-//            mUnbinder.unbind();
-//            mUnbinder = null;
-//        }
+        if (mUnbinder != null && mUnbinder != Unbinder.EMPTY) {
+            mUnbinder.unbind();
+            mUnbinder = null;
+        }
         mContext = null;
     }
 
